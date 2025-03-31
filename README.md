@@ -16,5 +16,8 @@ Los datos de la serie temporal dependen de la vivienda algunso empiezan el 07-08
 
 Cosas que comentar a agapito:
 
-A dia de hoy mi idea del clustering va ser pasar todo a formato ancho y hacer clustering de eso. 
+Te comparto el github?
+Que hago con los datos como planteo
+Puedo hacer clustering en el formato que me pasó?
+A dia de hoy mi idea del clustering va ser pasar todo a formato ancho y hacer clustering de eso (en todas las formas posibles: dendogramas, kmeans, DTW, SOM...)
 Otra idea que he visto es solo hacer clustering por ejemplo de dias. Cojo los domingos y hago clustering de los domingos de todas las viviendas.
