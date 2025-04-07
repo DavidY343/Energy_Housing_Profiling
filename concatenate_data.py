@@ -11,10 +11,8 @@ for file in os.listdir(folder_path):
         df = pd.read_csv(file_path, dtype={"cups": str}, sep=";")
         dataframes.append(df)
 
-# Concatenar todos los dataframes
 merged_df = pd.concat(dataframes, ignore_index=True)
 
-# Guardar el dataframe final como CSV
 output_path = "raw_data.csv"
 merged_df.to_csv(output_path, index=False, sep=";")
 
