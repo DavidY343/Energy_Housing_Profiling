@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-folder_path = "data_raw/"
+folder_path = "../data_raw/"
 
 dataframes = []
 
@@ -13,7 +13,7 @@ for file in os.listdir(folder_path):
 
 merged_df = pd.concat(dataframes, ignore_index=True)
 
-output_path = "data/vertical_raw_data.csv"
+output_path = "../data/vertical_raw_data.csv"
 merged_df.to_csv(output_path, index=False, sep=";")
 
 print("\033[92m✔ File successfully saved as raw_data.csv\033[0m")
