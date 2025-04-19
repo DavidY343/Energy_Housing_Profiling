@@ -1,7 +1,8 @@
 Ideas de clustering que he de intentar
 
 1. Mantener la dimensionalidad de los datos, es decir no quitar ninguno
-    - Probar  K_Medoids (cdist DTW) with Tslearn
+    - Probar K_Medoids (cdist DTW) with Tslearn
+	- Probar K_Means (DTW) with Tslearn
     - Hacer clustering por dias: X vivienda dia Y y eso es un dato (fijarme en K−ISAC_TLP)
     - Analizar solo determinados periodos:
         - Probar Meses de verano
