@@ -6,7 +6,7 @@ Ideas de clustering que he de intentar
 	- Probar K_Means (DTW) with Tslearn:
         Pensaba que se podia pero no, K_means requiere longitudes fijas
     - Hacer clustering por dias: X vivienda dia Y y eso es un dato (fijarme en K−ISAC_TLP)
-        Completado buenos resultados
+        Completado: buenos resultados
     - Analizar solo determinados periodos:
         - Probar Meses de verano
         - Probar Meses de invierno
