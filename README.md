@@ -31,7 +31,7 @@ Extraer métricas globales y aplicar clustering sin alineación temporal:
 
 ## 2. Reducción de dimensionalidad o filtrado de datos  
 **Opción a valorar (si otras alternativas fallan):**  
-- **Filtrado**: Eliminar viviendas/cups con insuficientes datos y ajustar a la máxima longitud común.  
+- **Filtrado**: Eliminar viviendas/cups con insuficientes datos y ajustar a la máxima longitud común para homegeneizar.  
 - **Enfoques propuestos**:  
   - `K-Means + DTW` (usando `tslearn`).  
   - `K-ISAC_TLP` (especializado en series temporales).  
@@ -45,12 +45,5 @@ Extraer métricas globales y aplicar clustering sin alineación temporal:
 ## 3. Otras ideas exploratorias  
 - **Autoencoders para series temporales**:  
   - Compresión no lineal de dimensionalidad antes de clustering.  
-
----
-
-### Notas clave:  
-- **K-ISAC_TLP** destacó en pruebas previas (a pesar de métricas tradicionales no concluyentes).  
-- La segmentación temporal (verano/invierno, fines de semana) sigue siendo relevante para análisis específicos.  
-- Los *autoencoders* podrían capturar patrones complejos no lineales.  
-
-¿Quieres profundizar en algún enfoque en particular? 🛠️
+- **Dendogramas**:
+  - Complejidad computacional alta `O(n³) o O(n² log n)`(para métodos optimizados como linkage). Para miles de series temporales, puede volverse lento o inviable.
