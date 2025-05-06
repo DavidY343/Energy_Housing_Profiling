@@ -2,7 +2,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv("../../data/vertical_preprocessed_data.csv", sep=";")
+df = pd.read_csv("../../../data/vertical_preprocessed_data.csv", sep=";")
 
 # Pivotar la tabla para tener un perfil de consumo por día
 df_pivot = df.pivot_table(index=['cups', 'fecha'], columns='hora', values='consumo_kWh')

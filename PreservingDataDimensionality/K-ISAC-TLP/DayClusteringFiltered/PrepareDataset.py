@@ -2,7 +2,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv("../../data/vertical_preprocessed_data.csv", sep=";")
+df = pd.read_csv("../../../data/vertical_preprocessed_data.csv", sep=";")
 
 
 ## APLICACIÓN DE CRITERIOS DE LIMPIEZA ##
