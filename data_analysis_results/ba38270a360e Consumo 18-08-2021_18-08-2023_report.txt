@@ -1,0 +1,24 @@
+====================================
+ANÁLISIS DE COMPLETITUD DE DATOS
+Archivo: ba38270a360e Consumo 18-08-2021_18-08-2023.csv
+CUPS: ba38270a360e
+====================================
+⚠️ DISCREPANCIA DETECTADA:
+• Esperado (según nombre): 2021-08-18 a 2023-08-18
+• Encontrado en datos:    2023-02-22 a 2023-08-15
+• Días de desfase:
+  - Inicio: 553 días (después)
+  - Fin: 3 días (antes)
+
+✅ No hay fechas faltantes en el rango.
+
+⚠️ Días con horas incompletas (2):
+  - 2023-03-26: 23/24 horas
+  - 2023-08-12: 23/24 horas
+
+[RESUMEN DE COMPLETITUD]
+• Total de días esperados: 175
+• Días completos (24 horas): 173
+• Días incompletos: 2
+• Días faltantes: 0
+• Completitud: 98.86%
