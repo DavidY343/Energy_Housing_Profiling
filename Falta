@@ -1,0 +1,7 @@
+Falta de lo K-Means
+Quitarle comentarios
+Hacer dos graficos uno que saque el promedio de consumo de la serie temporal entera de cada cups segun su cluster
+luego el cluster promedio y todos por debajo el sombreadios los cups de ese cluster y su consumo
+
+Luego hay que hacer otro modelo que haga PCA antes
+Hay que hacer otro modelo que en vez de meses lo haga con cada dia de la semana
