@@ -25,13 +25,12 @@ flowchart TD
     C2 --> D
     C3 --> D
     C4 --> D
-    D --> D1["K-means"] & D2["Bisecting K-means"] & D3["Spectral Clustering"] & D4["CKSC"]
+    D --> D1["K-means"] & D2["Bisecting K-means"] & D3["Spectral Clustering"]
     
     %% --- RESULTADOS ---
     D1 --> E{"Visualización"} & F["Explicabilidad"]
     D2 --> E{"Visualización"} & F["Explicabilidad"]
     D3 --> E{"Visualización"} & F["Explicabilidad"]
-    D4 --> E{"Visualización"} & F["Explicabilidad"]
     
     F --> F2["Arbol de Decision"]
     F2 --> F3["Reglas de Decision"]
