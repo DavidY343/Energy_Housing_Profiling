@@ -1,0 +1,14 @@
+=== RESUMEN DE MODIFICACIONES ===
+
+Total de horas modificadas: 6534
+CUPS c1244d6dea7a: 6534 veces
+
+=== RESUMEN DE ANÁLISIS ===
+
+Total de archivos procesados: 131
+Archivos con discrepancias de fecha: 130
+Archivos con fechas faltantes: 0
+Archivos con días incompletos: 130
+Archivos con errores: 0
+
+Análisis completado. Resultados guardados en: data_analysis_results/

@@ -1,0 +1,26 @@
+====================================
+ANÁLISIS DE COMPLETITUD DE DATOS
+Archivo: 426fb012b93d Consumo 07-08-2021_04-08-2023.csv
+CUPS: 426fb012b93d
+====================================
+
+RESUMEN DE FORMATEO DE HORA:
+====================================
+Modificaciones por CUPS: 0
+====================================
+✅ El rango coincide con lo esperado
+
+✅ No hay fechas faltantes en el rango.
+
+⚠️ Días con horas incompletas (4):
+  - 2021-10-31: 25/24 horas
+  - 2022-03-27: 23/24 horas
+  - 2022-10-30: 25/24 horas
+  - 2023-03-26: 23/24 horas
+
+[RESUMEN DE COMPLETITUD]
+• Total de días esperados: 728
+• Días completos (24 horas): 724
+• Días incompletos: 4
+• Días faltantes: 0
+• Completitud: 99.45%

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Clustering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Configuración de Clustering de Consumo Energético</h1>
+        
+        <!-- Sección 1: Configuración de Rutas -->
+        <div class="config-section">
+            <h2 class="section-title">1. Configuración de Rutas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="dataPath" class="form-label">Ruta de los Datos Originales:</label>
+                        <input type="text" class="form-control" id="dataPath" value="../data_raw">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="outputPath" class="form-label">Ruta para Resultados:</label>
+                        <input type="text" class="form-control" id="outputPath" value="data_analysis_results">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección 2: Método de Imputación -->
+        <div class="config-section">
+            <h2 class="section-title">2. Método de Imputación de Valores Faltantes</h2>
+            <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'imputation')" data-value="knn">
+                    KNN Imputer
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'imputation')" data-value="soft">
+                    Soft Impute
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'imputation')" data-value="drop">
+                    Eliminar NaN
+                </button>
+            </div>
+            <input type="hidden" id="selectedImputation" value="">
+        </div>
+        
+        <!-- Sección 3: Método de Escalado -->
+        <div class="config-section">
+            <h2 class="section-title">3. Método de Escalado de Características</h2>
+            <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'scaling')" data-value="standard">
+                    Standard Scaler
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'scaling')" data-value="minmax">
+                    MinMax Scaler
+                </button>
+            </div>
+            <input type="hidden" id="selectedScaling" value="">
+        </div>
+        
+        <!-- Sección 4: Selección de K y Modelo -->
+        <div class="config-section">
+            <h2 class="section-title">4. Selección de K y Modelo</h2>
+            <div class="mb-3">
+                <div class="d-flex flex-wrap">
+                    <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'model')" data-value="kmeans">
+                        K-Means
+                    </button>
+                    <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'model')" data-value="bkmeans">
+                        Bisecting K-Means
+                    </button>
+                    <button type="button" class="btn btn-outline-primary btn-option" onclick="selectOption(this, 'model')" data-value="sc">
+                        Spectral Clustering
+                    </button>
+                </div>
+                <input type="hidden" id="selectedModel" value="">
+            </div>
+        </div>
+        
+        <!-- Sección 5: Acciones -->
+        <div class="config-section">
+            <h2 class="section-title">5. Acciones</h2>
+            <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-primary me-2" id="btnRunEDA" onclick="runEDA()">
+                    Ejecutar EDA
+                </button>
+                <button type="button" class="btn btn-success me-2" id="btnRunClustering" onclick="runClustering()">
+                    Ejecutar Clustering
+                </button>
+                <button type="button" class="btn btn-info me-2" id="btnVisualize" disabled>
+                    Visualizar Resultados
+                </button>
+                <button type="button" class="btn btn-warning" id="btnBinaryTree" disabled>
+                    Mostrar Árbol de Decisión
+                </button>
+            </div>
+        </div>
+        
+        <!-- Contenedor para visualización -->
+         <div class="config-section">
+        <div id="visualization-container">
+            <h2 class="section-title">Resultados</h2>
+            <div id="visualization-content"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/script.js"></script> 
+</body>
+</html>

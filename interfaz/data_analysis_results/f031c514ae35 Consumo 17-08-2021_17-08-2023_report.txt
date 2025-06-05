@@ -1,0 +1,29 @@
+====================================
+ANÁLISIS DE COMPLETITUD DE DATOS
+Archivo: f031c514ae35 Consumo 17-08-2021_17-08-2023.csv
+CUPS: f031c514ae35
+====================================
+
+RESUMEN DE FORMATEO DE HORA:
+====================================
+Modificaciones por CUPS: 0
+====================================
+⚠️ DISCREPANCIA DETECTADA:
+• Esperado (según nombre): 2021-08-17 a 2023-08-17
+• Encontrado en datos:    2022-04-07 a 2023-08-16
+• Días de desfase:
+  - Inicio: 233 días (después)
+  - Fin: 1 días (antes)
+
+✅ No hay fechas faltantes en el rango.
+
+⚠️ Días con horas incompletas (2):
+  - 2022-10-30: 25/24 horas
+  - 2023-03-26: 23/24 horas
+
+[RESUMEN DE COMPLETITUD]
+• Total de días esperados: 497
+• Días completos (24 horas): 495
+• Días incompletos: 2
+• Días faltantes: 0
+• Completitud: 99.60%
