@@ -75,7 +75,7 @@ class MyBinaryTree:
         plt.title('Árbol de Decisión para Interpretación de Clusters', fontsize=14)
         if save_path:
             plt.savefig(save_path, bbox_inches='tight')
-        plt.show()
+        #plt.show()
         
     def plot_feature_importance(self, save_path=None):
         """Muestra la importancia de las características"""
@@ -93,7 +93,7 @@ class MyBinaryTree:
         plt.gca().invert_yaxis()
         if save_path:
             plt.savefig(save_path, bbox_inches='tight')
-        plt.show()
+        #plt.show()
         
     def get_decision_rules(self):
         """Devuelve las reglas de decisión en formato texto"""
@@ -113,13 +113,13 @@ class MyBinaryTree:
         4. Devuelve reglas de decisión
         """
 
-        print(f"🔍 Interpretando {self.best_k} clusters...")
+        print(f"Interpretando {self.best_k} clusters...")
         
         # Entrenar árbol
         self.train_decision_tree(max_depth=5)
         
         # Visualizar
-        print("\n🌳 Visualizando árbol de decisión...")
+        print("\nVisualizando árbol de decisión...")
 
         save_path = os.path.join(self.current_script_dir, '..', 'img_results', f'decision_tree_{self.model_type}.png')
         if self.model_type == 'sc':
@@ -131,9 +131,9 @@ class MyBinaryTree:
         
         
         # Importancia de features
-        print("\n📊 Mostrando importancia de características...")
+        print("\nMostrando importancia de características...")
         save_path = os.path.join(self.current_script_dir, '..', 'img_results', f'feature_importance_{self.model_type}.png')           
         self.plot_feature_importance(save_path=save_path)
         # Reglas de decisión
-        print("\n📝 Reglas de decisión:")
+        print("\nReglas de decisión:")
         print(self.get_decision_rules())
