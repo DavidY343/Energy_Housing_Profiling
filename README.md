@@ -2,7 +2,7 @@
 
 Un pipeline completo de análisis y clustering de datos de consumo energético con interfaz web integrada. Este proyecto implementa múltiples algoritmos de agrupamiento (K-Means, Bisecting K-Means, Spectral Clustering) y técnicas de procesamiento de datos para identificar patrones de consumo en viviendas.
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Pipeline modular** con notebooks independientes para cada fase del análisis
 - **Interfaz web** desarrollada en Flask para uso sin conocimientos técnicos
@@ -12,12 +12,12 @@ Un pipeline completo de análisis y clustering de datos de consumo energético c
 - **Árboles de decisión** para interpretabilidad de clusters
 - **Arquitectura extensible** para nuevos algoritmos y datasets
 
-## 📋 Requisitos
+## Requisitos
 
 - **Python 3.9+**
 - Entorno virtual recomendado (`venv`, `conda` o similar)
 
-## 🛠️ Instalación
+## Instalación
 
 1. Clona el repositorio:
 ```bash
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Esto instalará automáticamente todas las librerías necesarias: pandas, scikit-learn, matplotlib, fancyimpute, Flask, entre otras.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ├── Algorithm/                          # Núcleo del proyecto
@@ -50,7 +50,7 @@ Esto instalará automáticamente todas las librerías necesarias: pandas, scikit
 └── README.md
 ```
 
-## 🔄 Pipeline de Ejecución
+## Pipeline de Ejecución
 
 ### Opción 1: Notebooks (Uso Técnico)
 
@@ -106,7 +106,7 @@ Accede a `http://127.0.0.1:5000/` y sigue el flujo guiado:
 4. **Visualización** - Gráficos automáticos de resultados
 5. **Interpretabilidad** - Árbol de decisión opcional
 
-## 🧮 Algoritmos Implementados
+## Algoritmos Implementados
 
 ### Clustering
 - **K-Means**: Clustering particional clásico
@@ -123,14 +123,14 @@ Accede a `http://127.0.0.1:5000/` y sigue el flujo guiado:
 - **Drop**: Eliminación conservadora
 
 
-## 🎯 Casos de Uso
+## Casos de Uso
 
 - **Empresas energéticas**: Segmentación de clientes y tarifas personalizadas
 - **Investigación académica**: Análisis de patrones de consumo
 - **Políticas públicas**: Identificación de grupos vulnerables
 - **Eficiencia energética**: Detección de consumos anómalos
 
-## 🔧 Módulos de la Interfaz
+## Módulos de la Interfaz
 
 Los scripts en `interfaz/src/` encapsulan la lógica de cada fase:
 
@@ -142,7 +142,7 @@ Los scripts en `interfaz/src/` encapsulan la lógica de cada fase:
 - `visualization.py` - Generación de gráficos
 - `binary_tree.py` - Interpretabilidad
 
-## 📈 Visualizaciones
+## Visualizaciones
 
 - **PCA 2D/3D**: Reducción dimensional para visualización
 - **Centroides**: Perfiles promedio de cada cluster
@@ -150,7 +150,7 @@ Los scripts en `interfaz/src/` encapsulan la lógica de cada fase:
 - **Mapas de calor**: Correlaciones entre variables
 - **Árboles de decisión**: Reglas interpretables
 
-## 📝 Formato de Datos
+## Formato de Datos
 
 Los datos de entrada deben seguir el formato Datadis:
 
@@ -159,7 +159,7 @@ Los datos de entrada deben seguir el formato Datadis:
 **Ejemplo de una fila de datos:**  
 `0d9378df292f;2021/08/07;01:00;0,000;;`  
 
-## 🔬 Extensibilidad
+## Extensibilidad
 
 El diseño modular permite fácilmente:
 
